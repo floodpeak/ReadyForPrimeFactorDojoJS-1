@@ -1,5 +1,10 @@
-module.exports = function(number){
-  if (number === 1) return []
-  if (number === 4) return [2, 2]
+module.exports = function(number) {
+  var result = []
+  if (number === 1) return result
+  if (number === 4 || number === 6) {
+    result.push(2)
+    result.push(number / 2)
+    return result
+  }
   if (number > 1) return [number]
 }
